@@ -89,3 +89,7 @@ Setelah didownload, maka kita perlu decrypt file tersebut dengan cara `openssl d
 Dari hasil decrypt soal no 9, didapatkan password rahasia dari flag sebagai berikut:
 
 <img width="990" alt="image" src="https://user-images.githubusercontent.com/83849481/192102638-570c983f-8876-4e6f-bb45-8b01101aef45.png">
+
+## Kendala
+- Pada saat ping lipi.go.id cukup lama kemungkinan karena traffic yang masuk ke server terlalu banyak
+- Ada kesulitan saat decrypt file karena tidak diberitahu harus didownload as RAW
