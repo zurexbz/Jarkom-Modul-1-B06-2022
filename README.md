@@ -24,6 +24,7 @@ Menggunakan command filter `tcp.srcport == 443` untuk menampilkan semua paket ya
 ## Soal 6
 ### Filter sehingga wireshark hanya menampilkan paket yang menuju ke lipi.go.id!
 Langkah pertama mengecek IP dari lipi.go.id dengan ping lipi.go.id pada command prompt (CMD) jika menggunakan windows. Kemudian didapatkan IP dari lipi.go.id sebagai berikut:
+
 <img width="332" alt="image" src="https://user-images.githubusercontent.com/83849481/192074959-1fafa3ef-fb1a-424e-bdc6-aa4b920e7615.png">
 
 Setelah itu gunakan display filter `ip.dst==203.160.128.158` untuk menampilkan paket yang menuju lipi.go.id dan hasilnya sebagai berikut:
@@ -31,3 +32,9 @@ Setelah itu gunakan display filter `ip.dst==203.160.128.158` untuk menampilkan p
 
 ## Soal 7
 ### Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
+
+## Soal 8
+
+## Soal 9
+
+## Soal 10
