@@ -67,7 +67,25 @@ Sehingga hasil yang didapat adalah sebagai berikut:
 <img width="1280" alt="image" src="https://user-images.githubusercontent.com/83849481/192094830-12fe4094-886e-4da5-a10d-8836ffff6f72.png">
 
 ## Soal 8
+### Telusuri aliran paket dalam file .pcap yang diberikan, cari informasi berguna berupa percakapan antara dua mahasiswa terkait tindakan kecurangan pada kegiatan praktikum. Percakapan tersebut dilaporkan menggunakan protokol jaringan dengan tingkat keandalan yang tinggi dalam pertukaran datanya sehingga kalian perlu menerapkan filter dengan protokol yang tersebut.
+Langkah pertama yaitu mencari hint percakapan terkait kecurangan, disini kita menggunakan hint jawaban yang dalam wireshark dapat dicari dalam display filter dengan `tcp contains jawaban`. Nah dalam salah satu file ditemukan sebuah percakapan terkait tindakan kecurangan sebagai berikut:
+
+<img width="1002" alt="image" src="https://user-images.githubusercontent.com/83849481/192102104-19c3c109-1dfe-40bf-8f25-0a41edbef551.png">
 
 ## Soal 9
+### Terdapat laporan adanya pertukaran file yang dilakukan oleh kedua mahasiswa dalam percakapan yang diperoleh, carilah file yang dimaksud! Untuk memudahkan laporan kepada atasan, beri nama file yang ditemukan dengan format [nama_kelompok].des3 dan simpan output file dengan nama “flag.txt”.
+Dari hint soal no 8, terdapat transaksi terkait kecurangan yang dilakukan pada port 9002. Oleh karena itu kita mencari file tersebut dengan `tcp.srcport == 9002` pada display filter untuk mendapatkan file yang bersumber dari port 9002. Sehingga dihasilkan filter sebagai berikut:
+
+<img width="1280" alt="image" src="https://user-images.githubusercontent.com/83849481/192102292-3c0940eb-5c4b-48aa-bce8-f400ae94fb75.png">
+
+Kemudian kita download file no 59 dengan cara follow -> TCP Stream -> Show data as RAW dan rename sesuai yang diminta pada soal
+
+Setelah didownload, maka kita perlu decrypt file tersebut dengan cara `openssl des3 -d -salt -in B06.des3 -out flag.txt` dengan rincian B06 merupakan nomor kelompok dan flag.txt merupakan format yang diminta soal. Setelah itu kita diminta memasukkan password yang terdapat pada hint soal cerita dengan jawaban passwordnya adalah nakano yang merupakan nama belakang dari anime kembar 5
+
+<img width="1001" alt="image" src="https://user-images.githubusercontent.com/83849481/192102546-64d82e71-8d1c-4c09-acc7-f8249b416d67.png">
 
 ## Soal 10
+### Temukan password rahasia (flag) dari organisasi bawah tanah yang disebutkan di atas!
+Dari hasil decrypt soal no 9, didapatkan password rahasia dari flag sebagai berikut:
+
+<img width="990" alt="image" src="https://user-images.githubusercontent.com/83849481/192102638-570c983f-8876-4e6f-bb45-8b01101aef45.png">
