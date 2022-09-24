@@ -40,7 +40,7 @@ Setelah itu gunakan capture filter `src host [ip kalian]` untuk mengambil paket 
 
 <img width="1027" alt="image" src="https://user-images.githubusercontent.com/83849481/192094945-62979b4a-4664-41b3-8c10-61baa848bed1.png">
 
-Sehingga hasil yand didapat adalah sebagai berikut:
+Sehingga hasil yang didapat adalah sebagai berikut:
 <img width="1280" alt="image" src="https://user-images.githubusercontent.com/83849481/192094830-12fe4094-886e-4da5-a10d-8836ffff6f72.png">
 
 ## Soal 8
