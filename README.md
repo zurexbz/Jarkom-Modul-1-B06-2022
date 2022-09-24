@@ -18,4 +18,10 @@
 
 ## Soal 5
 ### Filter sehingga wireshark hanya mengambil paket yang berasal dari port 443!
-Menggunakan command filter `tcp.srcport == 443` untuk menampilkan semua paket yang memiliki protokol TCP yang berasal dari port 443
+Menggunakan command filter `tcp.srcport == 443` untuk menampilkan semua paket yang memiliki protokol TCP yang berasal dari port 443. Sehingga hasil yang dikeluarkan adalah sebagai berikut:
+<img width="1280" alt="image" src="https://user-images.githubusercontent.com/83849481/192074898-2158836a-b6d6-462f-b730-9bb9389cefac.png">
+
+## Soal 6
+### Filter sehingga wireshark hanya menampilkan paket yang menuju ke lipi.go.id!
+Langkah pertama mengecek IP dari lipi.go.id dengan ping lipi.go.id pada command prompt (CMD) jika menggunakan windows. Kemudian didapatkan IP dari lipi.go.id sebagai berikut:
+<img width="332" alt="image" src="https://user-images.githubusercontent.com/83849481/192074959-1fafa3ef-fb1a-424e-bdc6-aa4b920e7615.png">
