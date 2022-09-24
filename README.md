@@ -93,3 +93,4 @@ Dari hasil decrypt soal no 9, didapatkan password rahasia dari flag sebagai beri
 ## Kendala
 - Pada saat ping lipi.go.id cukup lama kemungkinan karena traffic yang masuk ke server terlalu banyak
 - Ada kesulitan saat decrypt file karena tidak diberitahu harus didownload as RAW
+- Kesulitan untuk menebak password karena tidak tau tentang anime kembar 5 nya
