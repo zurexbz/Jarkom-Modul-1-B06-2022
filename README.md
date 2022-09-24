@@ -9,13 +9,29 @@
 | 3 | 5025201167 | William Zefanya Maranatha |
 
 ## Soal 1
+### Sebutkan web server yang digunakan pada "monta.if.its.ac.id"!
+Pertama, cari web dengan mengetikkan `http contains “monta.if.its.ac.id”`
 
+Lalu, pilih salah satu paket yang ada di display. Klik kanan pada paket tersebut dan hover cursor pada follow dan pilih tcp stream.
+
+Lalu setelah itu ketik pada server pada find untuk menampilkan web server yang digunakan.
+
+web server yang digunakan ada pada tulisan server yaitu `nginx/1.10.3`
 ## Soal 2
+### Ishaq sedang bingung mencari topik ta untuk semester ini , lalu ia datang ke website monta dan menemukan detail topik pada website “monta.if.its.ac.id” , judul TA apa yang dibuka oleh ishaq ?
+Pertama, cari web yang mengandung detail dengan `http contains “detail”`
 
+Lalu, pilih salah satu paket yang ada. Klik kanan pada paket dan hover cursor pada follow, pilih http stream.
+
+Selanjutnya, cari tugas akhir menggunakan find.
+
+Terlihat judul TA yang dibuka oleh Ishaq adalah Evaluasi unjuk kerja User Space Filesystem
 ## Soal 3
-
+### Filter sehingga wireshark hanya menampilkan paket yang menuju port 80!
+Cari paket yang menuju ke port 80 dengan cara `tcp.dstport == 80`
 ## Soal 4
-
+### Filter sehingga wireshark hanya mengambil paket yang berasal dari port 21!
+Menggunakan command filter `tcp.srcport == 21` untuk menampilkan semua paket yang memiliki protokol TCP yang berasal dari port 21.
 ## Soal 5
 ### Filter sehingga wireshark hanya mengambil paket yang berasal dari port 443!
 Menggunakan command filter `tcp.srcport == 443` untuk menampilkan semua paket yang memiliki protokol TCP yang berasal dari port 443. Sehingga hasil yang dikeluarkan adalah sebagai berikut:
